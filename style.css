@@ -1,0 +1,153 @@
+/* Layout */
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-size: 0.8rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+/* Header */
+#header {
+    justify-self: flex-start;
+    display: flex;
+    padding: 15px 50px;
+    color: rgb(44, 44, 44);
+}
+
+.right-justify {
+    margin-left: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    min-width: 100%;
+}
+
+li {
+    margin: 0px 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    #header {
+        font-size: 1em;
+    }
+}
+ 
+/* Do this to make navbar stick, doesn't look good on my website */
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+/* Cover */
+.cover {
+    min-height: 60vh;
+    background-image: url(img/computer.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 600px;
+}
+
+/* Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-zone {
+    background-color: rgb(31, 31, 31);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.25s;
+}
+
+.portfolio-zone:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+#footer {
+    justify-self: flex-end;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* Appearance */
+.zone {
+    padding:30px 50px;
+    font-size:2em;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 2px 7px, inset rgba(0,0,0,0.15) 0px -5px 10px;
+}
+
+.white {
+    background: rgb(240, 240, 240);
+}
+
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
